@@ -1,0 +1,21 @@
+.header-container {
+    background-color: rgb(175, 167, 167);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.dark-header {
+    background-color: #31363F;
+    color: white;
+}
+.dark-container{
+    background-color: #222831;
+    color: white;
+}
+.dark-cards{
+    background-color: #252B48;
+    color: white;
+}
