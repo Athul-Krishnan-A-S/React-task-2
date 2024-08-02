@@ -1,4 +1,4 @@
-.user-cards-container{
+.user-cards-container {
     width: 100%;
     padding-block: 3rem;
     display: flex;
@@ -7,12 +7,19 @@
     place-items: center;
 }
 
+.cards-container-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .cards-Container {
-    width: 80%;
+    width: 20%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
 }
 
 .user-cards-image-container {
@@ -29,7 +36,7 @@
 }
 
 .card {
-    width: 20%;
+    width: 100%;
     padding: 1rem;
     border-radius: 30px;
     transition: ease-in;

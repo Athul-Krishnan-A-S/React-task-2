@@ -1,19 +1,20 @@
-import React , { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './withLoader.css';
+import { useDataLoad } from "../../context/DataLoadedContext";
 
 const WithLoader = (OldComponent) => {
-    return function EnhancedComponent(props){
-        const [loading ,setLoading] = useState(true);
+    return function EnhancedComponent(props) {
+        const { isDataLoaded } = useDataLoad();
+        const [loading, setLoading] = useState(false);
+        console.log(isDataLoaded)
 
-        useEffect(() => {
-            const timer  = setTimeout(() => {
-               setLoading(false) 
-            }, 1000);
+        // useEffect(() => {
+        //     if (isDataLoaded) {
+        //         setLoading(false); 
+        //     }
+        // }, [isDataLoaded]);
 
-            return() => clearTimeout(timer);
-        },[]);
-
-        if(loading){
+        if (loading) {
             return (
                 <div className='loader-container'>
                     <section className="dots-container">
@@ -23,11 +24,10 @@ const WithLoader = (OldComponent) => {
                         <div className="dot"></div>
                         <div className="dot"></div>
                     </section>
-                    <p>Fetching Api</p>
                 </div>
-            )
+            );
         }
-        return <OldComponent {...props} />
+        return <OldComponent {...props} />;
     };
 };
 
