@@ -1,0 +1,25 @@
+{
+    "short_name": "NEW APP",
+    "name": "NEW APP",
+    "icons": [
+        {
+            "src": "http://4.bp.blogspot.com/-Kwj5Bxoy1Oo/T2CzapImyoI/AAAAAAAABGI/T1y54VVtmWQ/s1600/Google+Favicon+Wallpapers.jpg",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "https://geotg.com/wp-content/uploads/2018/12/updated_favicon-1200x1200.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://w7.pngwing.com/pngs/672/907/png-transparent-favicon-buggi-trademark-logo-circle.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
